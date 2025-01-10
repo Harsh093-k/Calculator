@@ -1,6 +1,6 @@
 .outter{
     height: 34.375rem;
-    width: 22.813rem;
+    width: 21.65rem;
     background-color: black;
     border: 5px solid black;
     text-align: center;
@@ -19,8 +19,8 @@
  
  
  .btn{
-   height: 5rem;
-   width: 5rem;
+   height: 4.5rem;
+   width: 4.5rem;
    margin: 4.5px;       
    padding: "30px 40px";
    font-size:" 20px";
