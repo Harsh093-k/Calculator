@@ -19,9 +19,9 @@
  
  
  .btn{
-   height: 60px;
-   width: 60px;
-   margin: 1px;       
+   height: 90px;
+   width: 90px;
+   margin: 5px;       
    padding: "20px 30px";
    font-size:" 16px";
    cursor: "pointer";
