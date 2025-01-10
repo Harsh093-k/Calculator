@@ -12,7 +12,9 @@ export default function Calculator() {
   const handleClear = () => {
     setDigit(""); 
   };
-
+  const handlex =() =>{
+  setDigit(digit.slice(0, digit.length - 1)); // Removes the last character
+  };
   const handleCalculate = () => {
     try {
       setDigit(eval(digit));
@@ -27,6 +29,14 @@ export default function Calculator() {
     
         <Calculatorinput digit={digit}/>
      
+        <div className="container">
+        <button onClick={handleClear} class="btn">C</button>
+        <button onClick={() => handleBtn("/")} class="btn">/</button>
+        <button onClick={() => handleBtn("**")} class="btn">P</button>
+        <button onClick={handlex} class="btn">AC</button>
+        
+       
+        </div>
         
      
         <div className="container">
@@ -48,13 +58,14 @@ export default function Calculator() {
         <button onClick={() => handleBtn("1")} class="btn">1</button>
         <button onClick={() => handleBtn("2")} class="btn">2</button>
         <button onClick={() => handleBtn("3")} class="btn">3</button>
-        <button onClick={() => handleBtn("+")} class="btn-1">+</button>
+        <button onClick={() => handleBtn("+")} class="btn">+</button>
         </div>
 
         <div className="container">
-        <button onClick={handleClear} class="btn">C</button>
+        
        <button onClick={() => handleBtn("0")} class="btn"  >  0</button>
         <button onClick={() => handleBtn(".")} class="btn">.</button>
+        <button onClick={() => handleBtn("00")} class="btn"  >  00</button>
         <button onClick={handleCalculate} class="btn">=</button>
         
       </div>
